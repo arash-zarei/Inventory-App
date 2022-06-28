@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/responsive.css">
+    <title>Inventory</title>
+</head>
+<body>
+    
+    <div class="show_products">
+        <div class="head">
+            <div class="content">
+                <h2>Inventory Of Products</h2>
+                <h4><span class="count"></span>  Products</h4>
+            </div>
+            <div class="btn_add_product">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="sort_search">
+            <div class="content">
+                <div>
+                    <label for="input[type=search]">Search</label>
+                    <input placeholder="Search Products..." type="search" name="" id="search-product">
+                </div>
+                <div>
+                    <label for="sort">Sort</label>
+                    <select name="sort" id="sort-products">
+                        <option value="newest">Select A Options</option>
+                        <option selected value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="items_products">
+            <div class="content">
+                <!-- <div class="product">
+                    <div class="title"><p>JavaScript</p></div>
+                    <div class="specifications">
+                        <span class="date">1382/03/15</span>
+                        <span class="category">Script</span>
+                        <span class="quentity">15</span>
+                        <button class="remove">Remove</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+    <div class="add_products">
+        <div class="head">
+            <div class="content">
+                <h2>Add Product</h2>
+            </div>
+            <div class="btn_close_product">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="item_new_product">
+            <form id="form">
+                <div>
+                    <label for="input[type=text]">Title</label>
+                    <input id="product-title" placeholder="Product Title" type="text" name="text">
+                </div>
+                <div>
+                    <label for="input[type=number]">Quantity</label>
+                    <input id="product-quantity" placeholder="product Quantity" type="number" id="">
+                </div>
+                <div>
+                    <label for="category">Category</label>
+                    <select id="selected-category" required name="category">
+                        
+                    </select>
+                </div>
+                <div>
+                    <button id="add-product" class="btn">Add New Product</button>
+                </div>
+            </form>
+
+            <div class="add_category">
+                <button id="add-category-form" class="add_btn">Add New Category?</button>
+            </div>
+
+            <div class="new_category">
+                <form>
+                    <div>
+                        <label for="input[type=text]">Title</label>
+                        <input id="category-title" placeholder="Category Title" type="text">
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <textarea id="category-description" placeholder="Category Description..." name="description" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn" id="add_category_btn">Add Category</button>
+                        <button class="btn calnsel_btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../src/js/app.js" type="module"></script>
+</body>
+</html>
